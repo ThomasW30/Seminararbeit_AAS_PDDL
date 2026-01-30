@@ -66,10 +66,24 @@ Seminararbeit_AAS_UPF/
 │
 └── pddl/
     ├── output/                        # Generierte PDDL Dateien
-    │   ├── [Name]_domain.pddl        # PDDL Domain
-    │   └── [Name]_problem.pddl       # PDDL Problem
+    │   ├── mps500_domain.pddl        # MPS500 PDDL Domain
+    │   └── mps500_problem.pddl       # MPS500 PDDL Problem
     └── solutions/                     # Lösungen
-        └── solution_UPF_[timestamp].txt
+        └── solution_UPF_20260130_005507.txt  # MPS500 Lösung (128 Aktionen)
+```
+
+## Verfügbare PDDL-Dateien
+
+Das Repository enthält bereits generierte PDDL-Dateien für das MPS500-Beispiel:
+
+### Domain & Problem
+- **[pddl/output/mps500_domain.pddl](pddl/output/mps500_domain.pddl)** - PDDL Domain für MPS500 Produktionssystem
+- **[pddl/output/mps500_problem.pddl](pddl/output/mps500_problem.pddl)** - PDDL Problem Instance
+
+### Lösung
+- **[pddl/solutions/solution_UPF_20260130_005507.txt](pddl/solutions/solution_UPF_20260130_005507.txt)** - Berechnete Lösung mit 128 Aktionen
+
+Diese Dateien wurden automatisch aus den AASX-Dateien im `aasx_output/` Ordner generiert und mit dem Fast Downward Solver gelöst.
 ```
 
 ## Beispiele
