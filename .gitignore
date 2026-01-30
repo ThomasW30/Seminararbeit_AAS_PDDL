@@ -1,8 +1,6 @@
-# Claude Code Settings
-.claude/
 
-# Persönliche Anleitungen
-GITHUB_ANLEITUNG.md
+
+
 
 # Python
 __pycache__/
