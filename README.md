@@ -69,7 +69,7 @@ Seminararbeit_AAS_UPF/
     │   ├── mps500_domain.pddl        # MPS500 PDDL Domain
     │   └── mps500_problem.pddl       # MPS500 PDDL Problem
     └── solutions/                     # Lösungen
-        └── solution_UPF_20260130_005507.txt  # MPS500 Lösung (128 Aktionen)
+        └── solution_UPF_20260130_005507.txt  # MPS500 Lösung (136 Aktionen)
 ```
 
 ## Verfügbare PDDL-Dateien
@@ -81,7 +81,7 @@ Das Repository enthält bereits generierte PDDL-Dateien für das MPS500-Beispiel
 - **[pddl/output/mps500_problem.pddl](pddl/output/mps500_problem.pddl)** - PDDL Problem Instance
 
 ### Lösung
-- **[pddl/solutions/solution_UPF_20260130_005507.txt](pddl/solutions/solution_UPF_20260130_005507.txt)** - Berechnete Lösung mit 128 Aktionen
+- **[pddl/solutions/solution_UPF_20260130_005507.txt](pddl/solutions/solution_UPF_20260130_005507.txt)** - Berechnete Lösung mit 136 Aktionen
 
 Diese Dateien wurden automatisch aus den AASX-Dateien im `aasx_output/` Ordner generiert und mit dem Fast Downward Solver gelöst.
 ```
@@ -136,22 +136,19 @@ Nach erfolgreicher Ausführung werden folgende Dateien generiert:
 UPF PROBLEM AUFGEBAUT
 ======================================================================
   Domain:     MPS500_Planungssystem
-  Typen:      8
-  Fluents:    15
-  Aktionen:   12
-  Objekte:    25
-  Goals:      3
+  Objekte:    45
+  Fluents:    11
+  Aktionen:   9
 
 [PDDL] Export nach: pddl/output/
-  [OK] MPS500_Planungssystem_domain.pddl
-  [OK] MPS500_Planungssystem_problem.pddl
+  [OK] mps500_domain.pddl
+  [OK] mps500_problem.pddl
 
 [UPF] Solving mit Fast Downward...
   Status: SOLVED_SATISFICING
-  Aktionen: 128
-  Solver-Zeit: 0.45s
+  Lösungsschritte: 136
 
-[OK] Lösung gespeichert: pddl/solutions/solution_UPF_20260130_123456.txt
+[OK] Lösung gespeichert: pddl/solutions/solution_UPF_20260130_005507.txt
 ```
 
 ## Architektur
